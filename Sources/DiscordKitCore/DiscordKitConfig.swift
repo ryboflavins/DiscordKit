@@ -179,7 +179,7 @@ public struct DiscordKitConfig {
         version: Int? = nil,
         properties: GatewayConnProperties? = nil,
         intents: Intents? = nil,
-        streamCompression: Bool = true
+        streamCompression: Bool = false //False to prevent 1006 Error
     ) {
         self.cdnURL = "https://cdn.discordapp.com/"
         self.baseURL = URL(string: "https://\(baseURL)/")!
